@@ -233,6 +233,10 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="ViewSqlQueries\CoursesWithSpace.sql" />
+    <Content Include="ViewSqlQueries\CoursesWithStudents.sql" />
+    <Content Include="ViewSqlQueries\StudentsNotMaxRegistered.sql" />
+    <Content Include="ViewSqlQueries\StudentWithCourses.sql" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
