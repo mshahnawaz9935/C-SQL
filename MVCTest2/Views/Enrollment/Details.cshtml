@@ -1,0 +1,39 @@
+﻿@model MVCTest2.Models.Enrollment
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Enrollment</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Course Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Course.name)
+        </dd>
+        <dt>
+            Student Full Name
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Student.firstName)
+            @Html.DisplayFor(model => model.Student.surName)
+        </dd>
+        <dt>
+            Course Code
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Course.courseCode)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EnrollmentID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
